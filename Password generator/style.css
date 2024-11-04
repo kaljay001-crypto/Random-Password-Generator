@@ -1,0 +1,89 @@
+body{
+    margin: 0;
+    background-color: aliceblue;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;    
+}
+
+.password-container {
+        background-color: bisque;
+        border-radius: 10px 20px;
+        padding: 20px 20px;
+        width: 500px;
+        margin: 10px;
+        box-shadow: 0px 2px 3px 0px;
+
+}
+
+.input-container{
+    border: solid 2px black;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.input{
+    border:  none;
+    background-color: transparent;  
+    outline: none;
+    font-size: 20px;
+    letter-spacing: 3px;
+
+}
+
+.input::placeholder{
+    letter-spacing: 1px;
+}
+
+.fa-clipboard{
+    cursor: pointer;
+    opacity: .4;
+}
+
+.fa-clipboard:hover{
+        opacity: .8;
+}
+
+.btn{
+    border: none ;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 15px;
+}
+
+.btn:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    cursor: pointer;
+}
+.btn:active{
+    transform: scale(0.9);
+}
+.alert-container{
+    position: fixed;
+    width: 300px;
+    height: 50px;
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+    background-color: bisque;
+    color: rgb(106, 105, 105);
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.312);
+    transition: .4s;
+}
+
+.active.alert-container{
+    right: -300px;
+}
